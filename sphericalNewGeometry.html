@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB+UlEQVQ4jY2SP0jUYRjHP9/3ftqlEXpyqRFh568SItoqqkGioqGkxcFE01qEiEAoGooOCtpqcKilhnAJaRVXtyBqUpAQm/pj4SV4Zp73e5+GO4678zf4jM+fz/t9vs8rYmIlHNyLT4yD7wBA7luU3Hixb34qX98bxAH8lppdwgZARwAwm9u9uecVsA3g4gCmwOLyceGMrFsLR9N2rL9xp0NGf+Jn+1CzgbQSDh7A67XQX6QZH7nZBPzzLpoBjpZn5izQ5cAr6b0/ZXDRsKChsOtuQKQzSOcMmjDrk4uWDRaA9qonO1X0byLUA+wHAqHVYsPm2wC5a2BNVZ50GnTWaBZtoEt1m7TIuT5n5ucEn4CNnXoAFIAF87YqA631DKeKW5z0ZleFLoCFgOq9M1gSzIJNW+A+tH3J/KhpMlAuM/QIyMYCzB62fZ18JqicueYf5MLh08CtmGEAId1c7Ro5UZ2sAJYPDbTj7SlwsKr+kdJFygS6TVH2T9dISw3AenuDQIn7wPmqfZa8szGhe0CukhZXIkW3rayypOB32mGsA+vlvrzQ4/Ti5OfWpcy0Gc+BYrnmnVMH4Z3GCkDzU4VUqumJTGOCRcxetqaS70qys14JP4HxHum7mY0X8vZAixOb21wqXWHw+Fo4mq6v/cpcP5zrvnHWyNYY/x8l2Lsc9AdJYQAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon">
+
+    <title>Spheres</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- external css -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+
+    <!-- internal css -->
+	<style>
+	
+	 body{
+		font-family: "Roboto,Helvetica Neue",Helvetica,Arial,sans-serif; 
+	 }
+	 #container{
+		 padding-top: 30px;
+		 padding-left:50px;
+		 width:90%;
+	}
+	 
+	h5 {
+		color: #2e44b9;
+		font-weight: bold;
+		font-size: 24px;;
+	}
+	
+	.radio-zone{
+		padding: 0px 8px 0px 8px;
+		border-radius:2px;
+		min-width:300px;
+	}
+	</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <div class="btn-group" style="margin-top: 8px;margin-right:10px;">
+                </div>
+                <a class="navbar-brand" href="#">
+					Experiments with p5.js
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li id="demo" class="active"><a href="#demo">Spherical Geometry</a></li>
+                <li id="blog"><a href="https://philippemarcmeyer.github.io#canvas">Github Blog</a></li>
+                <li id="repos"><a href="https://github.com/PhilippeMarcMeyer">Github repos</a></li>
+            </ul>
+        </div>
+    </nav>
+  <div id="container">
+  
+	 
+	  <h5>Testing Geometry</h5>
+
+	 <div id="demoZone">  </div>
+
+  </div>
+  
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	  <script src="./SphericalNewGeometry.js"></script>
+
+	 
+</html>
