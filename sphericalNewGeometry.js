@@ -4,12 +4,17 @@
 
 var renderer;
 var geometry;
-var definition = 32;
+var definition = 36;
 var radiusX =150;
 var radiusY=150;
 var radiusZ=150;
-  var gId = 123;
-  var camX,camY;
+var gId = 123;
+var camX,camY;
+var baseColors=[];
+var facesStages = [];
+var stagesNr = 0;
+var opacity = 70;
+
 function setup() {
   
   // we need to remember the renderer that is created so
@@ -17,8 +22,22 @@ function setup() {
   renderer = createCanvas(windowWidth, windowHeight, WEBGL);
 
   noStroke();
+baseColors=[
+	color(50,50,200,opacity),
+	color(70,65,50,opacity),
+	color(70,90,50,opacity),
+	color(75,95,55,opacity),
+	color(80,100,60,opacity),
+	color(75,100,75,opacity),
+	color(60,102,102,opacity),
+	color(60,102,110,opacity),
+	color(60,102,115,opacity),
+	color(150,150,150,opacity),
+	color(200,200,200,opacity),
+	color(250,250,250,opacity)
 
-
+];
+stagesNr = baseColors.length;
   	camY = -600;
 	camX = 0;
 	camera(camX, camY, 200, 0, 0, 0, 0,1, 0);
@@ -57,7 +76,7 @@ function setup() {
           var cosTheta = Math.cos(theta);
           var sinTheta = Math.sin(theta);
           var p = new p5.Vector(cosPhi * sinTheta, sinPhi, cosPhi * cosTheta);
-          this.vertices.push(p);
+          this.vertices.push(p.mult(radiusX));
           this.vertexNormals.push(p);
           this.uvs.push(u, v);
         }
@@ -65,7 +84,6 @@ function setup() {
     };
 	
     geometry = new p5.Geometry(definition, definition, ellipsoid);
-
 
 
 }
@@ -104,7 +122,30 @@ function draw() {
    rotateY(frameCount * 0.001);
 
   // render the geometry
-  renderer.drawBuffersScaled(gId, radiusX, radiusY, radiusZ);
+    if(facesStages.length==0){
+	  geometry.faces.forEach(function(face){
+		facesStages.push(round(random(0,stagesNr-1)));
+	  });
+  }
+ renderer.drawBuffersScaled(gId, 1, 1, 1);
+
+  geometry.faces.forEach(function(face,i){
+	  //fill(random(0,255));
+	  var stage = facesStages[i];
+	  
+	 // fill(baseColors[facesStages[i]]);
+	  
+	    fill(baseColors[stage]);
+	var ptA = geometry.vertices[face[0]];
+	var ptB = geometry.vertices[face[1]];
+	var ptC = geometry.vertices[face[2]]; 
+	beginShape();
+	vertex(ptA.x, ptA.y, ptA.z);
+	vertex(ptB.x, ptB.y, ptB.z);
+	vertex(ptC.x, ptC.y, ptC.z);
+	 endShape(CLOSE);
+  });
+
     // add spheres where the lights are going to be
 	  pop();
 
@@ -119,6 +160,7 @@ function draw() {
   fill(255);
   sphere(10);
   pop();
+  //  stroke("white");
   /*
     push();
 	fill("white");
