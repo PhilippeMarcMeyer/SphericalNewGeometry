@@ -4,10 +4,11 @@
 var sunLightPos;
 var renderer;
 var fontPtr = null;
-var fontSize = 14;
+var fontSize = 12;
 var currentRotY =0;
 var geometry;
 var definition = 26;
+var selectedOrientation = "europe";
 var radiusX = 200;
 var radiusY = 200;
 var radiusZ = 200;
@@ -23,10 +24,15 @@ var lastOrbitCtrlRotations;
 var fr = 8;
 var placesDone = false;
 var places = [
-	{"name":"Paris","lat":48.856614,"lon": 2.3522219,"offScreen":null},
-	{"name":"London","lat":51.5085300,"lon": -0.1257400,"offScreen":null},
-	{"name":"New York","lat":40.712784,"lon": -74.005941,"offScreen":null}
-
+	{"name":"Paris","lat":48.5,"lon": 2.2,"offScreen":null,"alt":30,"pop":2.2},
+	{"name":"London","lat":51,"lon": -1,"offScreen":null,"w":50,"pop":8.136,"deltax":-20},
+	{"name":"New York","lat":40.4,"lon": -74,"offScreen":null,"pop":8.623},
+	{"name":"Madrid","lat":40.2,"lon": -3.4,"offScreen":null,"alt":30,"deltax":-15},
+	{"name":"Casablanca","lat":33.3,"lon": -7.3,"offScreen":null,"alt":30,"deltax":-40,"pop":3.6},
+	{"name":"Berlin","lat":52.3,"lon":13.2,"offScreen":null,"alt":40,"pop":3.575},
+	{"name":"Moscow","lat":55,"lon":37,"offScreen":null,"alt":40,"pop":11.92,"w":54},
+	{"name":"Sydney","lat":90+33.5,"lon":151.1,"offScreen":null,"alt":-40,"pop":5.137,"w":54},
+	{"name":"tokyo","lat":36,"lon":140,"offScreen":null,"alt":40,"pop":9.273},
 ];
 
 
@@ -42,7 +48,7 @@ function preload() {
 
 
 function setup() {
-	
+	setUI();
 	renderer = createCanvas(windowWidth, windowHeight-120, WEBGL);
 	lastOrbitCtrlRotations = createVector(0, 0, 0);
 
@@ -70,6 +76,44 @@ function setup() {
 	});	
 }
 
+
+function setUI(){
+	var dict = {
+		"europe":"Europe",
+		"africa":"Africa",
+		"north-america":"North America",
+		"south-america":"South America",
+		"asia":"Asia",
+		"australia":"Australia",
+		"japan-sea":"Japan Sea",
+		"north-pole":"North Pole",
+		"south-pole":"South Pole",
+	};
+	makeSelect("positionChoice",dict,selectedOrientation,function(){
+		selectedOrientation = this.value;
+		once = false;
+		 currentRotY = 0;
+	});
+	
+	setBtnName();
+	 $("#stopAndGo").on("click",function(){
+		toggleRotation()
+	});
+}
+
+function toggleRotation(){
+	autoRotate = !autoRotate;
+	setBtnName();
+}
+
+function setBtnName(){
+	if(autoRotate){
+		$("#stopAndGo").html("Stop !");
+	}else{
+		$("#stopAndGo").html("Rotate !");
+	}
+}
+
 function draw() {
 
 	orbiter = orbitControl();
@@ -81,8 +125,34 @@ function draw() {
 		push();
 		fill(62,89,250);
 		if(!once){
-		  lastOrbitCtrlRotations.y = radians(180);
-		  lastOrbitCtrlRotations.x = radians(60);
+			if(selectedOrientation == "europe"){
+				lastOrbitCtrlRotations.x = radians(45);			 
+				lastOrbitCtrlRotations.y = radians(180);		 
+			}else if(selectedOrientation == "africa"){
+				lastOrbitCtrlRotations.x = radians(70);			 
+				lastOrbitCtrlRotations.y = radians(180);
+			}else if(selectedOrientation == "north-america"){
+				lastOrbitCtrlRotations.x = radians(45);			 
+				lastOrbitCtrlRotations.y = radians(280);
+			}else if(selectedOrientation == "south-america"){
+				lastOrbitCtrlRotations.x = radians(90);			 
+				lastOrbitCtrlRotations.y = radians(240);
+			}else if(selectedOrientation == "asia"){
+				lastOrbitCtrlRotations.x = radians(55);			 
+				lastOrbitCtrlRotations.y = radians(90);
+			}else if(selectedOrientation == "australia"){
+				lastOrbitCtrlRotations.x = radians(90);			 
+				lastOrbitCtrlRotations.y = radians(45);
+			}else if(selectedOrientation == "japan-sea"){
+				lastOrbitCtrlRotations.x = radians(45);			 
+				lastOrbitCtrlRotations.y = radians(40);
+			}else if(selectedOrientation == "north-pole"){
+				lastOrbitCtrlRotations.x = radians(0);			 
+				lastOrbitCtrlRotations.y = radians(0);
+			}else if(selectedOrientation == "south-pole"){
+				lastOrbitCtrlRotations.x = radians(180);			 
+				lastOrbitCtrlRotations.y = radians(0);
+			}
 		}
 		texture(earth);
 		ambientLight(210);
@@ -116,6 +186,7 @@ function setCamera(){
 }
 
 function setListeners(){
+	/*
 	renderer.mouseOver(function(){
 		cursor(HAND);
 	});
@@ -132,9 +203,9 @@ function setListeners(){
 		lastOrbitCtrlRotations.x = (mouseX - width / 2) / (width / 2);
 		lastOrbitCtrlRotations.y = (mouseY - height / 2) / (height / 2);
 	});
-	
+	*/
 	renderer.doubleClicked(function() {
-		autoRotate = !autoRotate;
+		toggleRotation();
 	});
 	
 	renderer.mouseWheel(function(e){
@@ -144,6 +215,8 @@ function setListeners(){
 		if(camY < -4000) camY = -4000;
 		camera(camX, camY, 200, 0, 0, 0, 0,1, 0);
   });
+  
+
 
 }
 
@@ -178,7 +251,7 @@ function makeEllipsoid(){
 function preparePlaces(){
 	//{"name":"Paris","lat":48.856614,"lon": 2.3522219}
 	places.forEach(function(place){
-		var w = fontSize * place.name.length * 0.6;
+		var w = place.w || fontSize * place.name.length * 0.6;
 	    var h = fontSize + 4;
 		place.offScreen =  createGraphics(w, h);
 		place.offScreen.background(255);
@@ -186,32 +259,73 @@ function preparePlaces(){
 		place.offScreen.noFill();
 		place.offScreen.rect(0,0,w-1, h-1);
 		place.offScreen.textSize(fontSize);
-		place.offScreen.fill("red");
-
+		place.offScreen.stroke("black");
+		place.offScreen.fill("black");
+		place.offScreen.noFill();
 		place.offScreen.text(place.name,4,fontSize);
-		place.offScreen.scale(-1,1);
-		place.offScreen.image(place.offScreen, -place.offScreen.width, 0);
+		//place.offScreen.scale(-1,1);
+		//place.offScreen.image(place.offScreen, -place.offScreen.width, 0);
 	});
 }
 
 function drawPlaces(){
+	var yRot = (autoRotate) ? currentRotY : 0;
 	places.forEach(function(place){
 		// fix: in OpenGL, y & z axes are flipped from math notation of spherical coordinates
-		var theta = radians(place.lat) + PI/2 -0.12;
-		var phi = radians(place.lon) - PI/2 -0.01;
+		var theta = 0;
+		if(place.lat < 90){
+			theta = radians(abs(90-place.lat)) + PI/2 
+		}else{
+			theta = radians(place.lat) + PI/2 ;//-0.12
+		}
+		var phi = radians(place.lon) - PI/2 ;//-0.01
 		var r = radiusX;
 
 		var x = r * cos(theta) * cos(phi);
 		var y = -r * sin(theta);
 		var z = -r * cos(theta) * sin(phi);
 		
-	push();
-		rotateX(lastOrbitCtrlRotations.x); 
-		rotateY(lastOrbitCtrlRotations.y+currentRotY); 
-		translate(x,y-50,z);
- 
-		texture(place.offScreen);
-		plane(place.offScreen.width,place.offScreen.height);
+		push();
+		var size = round(place.pop || 3);
+			rotateX(lastOrbitCtrlRotations.x); 
+			rotateY(lastOrbitCtrlRotations.y+yRot); 
+			translate(x,y,z);
+			fill("red");
+			sphere(size);
+		pop();
+
+		push();
+		var altitude = place.alt || 50;
+		var deltax = place.deltax || 0;
+			rotateX(lastOrbitCtrlRotations.x); 
+			rotateY(lastOrbitCtrlRotations.y+yRot); 
+			
+			translate(x-deltax,y-altitude,z);
+			stroke("red");
+			var lineDelta = place.lat >= 90 ? -7 : +7;
+			line(0,lineDelta,0,deltax,altitude,0);
+			rotateY(-lastOrbitCtrlRotations.y-yRot); //
+			texture(place.offScreen);
+			plane(place.offScreen.width,place.offScreen.height);
 		pop();
 	});
+}
+
+
+function makeSelect(id,dictionary,selectedKey,onSelect){
+	var ptr = document.getElementById(id);
+	if(ptr){
+		for (var key in dictionary) {
+			var anOption = document.createElement("option");
+			anOption.value = key;
+			anOption.text = dictionary[key];
+			if(selectedKey == key){
+				anOption.selected = true;
+			}
+			ptr.appendChild(anOption);
+		}
+	}
+	if(onSelect){
+		ptr.onchange = onSelect;
+	}
 }

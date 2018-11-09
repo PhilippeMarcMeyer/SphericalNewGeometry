@@ -16,9 +16,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	
-	
-
-    <!-- https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js -->
 	<style>
 	
 	 body{
@@ -36,11 +33,29 @@
 		font-weight: bold;
 		font-size: 24px;;
 	}
+
 	
-	.radio-zone{
-		padding: 0px 8px 0px 8px;
-		border-radius:2px;
-		min-width:300px;
+	.controls{
+	    margin-left:20px;
+		font-size:14px;
+		margin-top:10px;
+	}
+	
+	.controls label{
+		color:white;
+		position:absolute;
+	
+		width:200px;
+		margin-bottom:10px;
+		user-select: none;
+	}
+	
+	.controls select{
+		margin-left:220px;
+		margin-bottom:10px;
+		line-height:18px;
+		width:160px;
+		height:24px;
 	}
 	</style>
   </head>
@@ -64,6 +79,12 @@
     </nav>
   <div id="container">
 	 <div id="demoZone">  </div>
+	<div class="controls">
+		<label>Orientation : </label><select id="positionChoice"></select> &nbsp;
+		<button type="button" id="stopAndGo" class="btn btn-sm btn-default ">Stop !</button>
+		<br /><br/>
+		<i style="color:white">Inspired by Daniel Shiffman :-)</i>
+	</div>
   </div>
   
   

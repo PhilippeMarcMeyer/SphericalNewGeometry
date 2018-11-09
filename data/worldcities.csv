@@ -1,0 +1,377 @@
+﻿name;lat;lng;country;capital;population
+Sanaa;15.3547;44.2066;Yemen;true;2008000
+Pretoria;-25.7069;28.2294;South Africa;true;1338000
+Durban;-29.865;30.98;South Africa;false;2729000
+Johannesburg;-26.17;28.03;South Africa;false;3435000
+Benoni;-26.1496;28.3299;South Africa;false;2986000
+Bloemfontein;-29.12;26.2299;South Africa;true;463064
+Cape Town;-33.92;18.435;South Africa;true;3215000
+Lusaka;-15.4166;28.2833;Zambia;true;1328000
+Harare;-17.8178;31.0447;Zimbabwe;true;1572000
+Astana;51.1811;71.4278;Kazakhstan;true;345604
+Vientiane;17.9667;102.6;Laos;true;754000
+Beirut;33.872;35.5097;Lebanon;true;1846000
+Castries;14.002;-61;Saint Lucia;true;37963
+Vaduz;47.1337;9.5167;Liechtenstein;true;36281
+Colombo;6.932;79.8578;Sri Lanka;true;217000
+Sri Jawewardenepura Kotte;6.9;79.95;Sri Lanka;true;115826
+Monrovia;6.3106;-10.8048;Liberia;true;1041000
+Maseru;-29.3167;27.4833;Lesotho;true;361324
+Vilnius;54.6834;25.3166;Lithuania;true;542366
+Luxembourg;49.6117;6.13;Luxembourg;true;107260
+Riga;56.95;24.1;Latvia;true;742572
+Tripoli;32.8925;13.18;Libya;true;2189000
+Casablanca;33.6;-7.6164;Morocco;false;3181000
+Rabat;34.0253;-6.8361;Morocco;true;1705000
+Monaco;43.7396;7.4069;Monaco;true;36371
+Chisinau;47.005;28.8577;Moldova;true;688134
+Podgorica;42.466;19.2663;Montenegro;true;145850
+Antananarivo;-18.9166;47.5166;Madagascar;true;1697000
+Majuro;7.103;171.38;Marshall Islands;true;25400
+Skopje;42;21.4335;Macedonia;true;494087
+Bamako;12.65;-8;Mali;true;1494000
+Rangoon;16.7834;96.1667;Burma;true;4088000
+Naypyidaw;19.7666;96.1186;Burma;true;930000
+Ulaanbaatar;47.9167;106.9166;Mongolia;true;885000
+Nouakchott;18.0864;-15.9753;Mauritania;true;742144
+Valletta;35.8997;14.5147;Malta;true;368250
+Port Louis;-20.1666;57.5;Mauritius;true;595491
+Male;4.1667;73.4999;Maldives;true;112927
+Lilongwe;-13.9833;33.7833;Malawi;true;646750
+Guadalajara;20.67;-103.33;Mexico;false;4198000
+Monterrey;25.67;-100.33;Mexico;false;3712000
+Mexico City;19.4424;-99.131;Mexico;true;19028000
+Puebla;19.05;-98.2;Mexico;false;2195000
+Kuala Lumpur;3.1667;101.7;Malaysia;true;1448000
+George Town;5.4136;100.3294;Malaysia;false;2500000
+Maputo;-25.9553;32.5892;Mozambique;true;1446000
+Windhoek;-22.57;17.0835;Namibia;true;268132
+Noumea;-22.2625;166.4443;New Caledonia;true;93060
+Niamey;13.5167;2.1167;Niger;true;915000
+Abuja;9.0833;7.5333;Nigeria;true;1576000
+Lagos;6.4433;3.3915;Nigeria;false;9466000
+Ibadan;7.38;3.93;Nigeria;false;2628000
+Kano;12;8.52;Nigeria;false;3140000
+Managua;12.153;-86.2685;Nicaragua;true;920000
+Amsterdam;52.35;4.9166;Netherlands;true;1031000
+The Hague;52.08;4.27;Netherlands;true;1406000
+Oslo;59.9167;10.75;Norway;true;835000
+Kathmandu;27.7167;85.3166;Nepal;true;895000
+Wellington;-41.3;174.7833;New Zealand;true;393400
+Muscat;23.6133;58.5933;Oman;true;734697
+Panama City;8.968;-79.533;Panama;true;1281000
+Lima;-12.048;-77.0501;Peru;true;8012000
+Papeete;-17.5334;-149.5667;French Polynesia;true;131695
+Port Moresby;-9.4647;147.1925;Papua New Guinea;true;283733
+Manila;14.6042;120.9822;Philippines;true;11100000
+Quezon City;14.6504;121.03;Philippines;false;2761720
+Karachi;24.87;66.99;Pakistan;false;12130000
+Islamabad;33.7;73.1666;Pakistan;true;780000
+Lahore;31.56;74.35;Pakistan;false;6577000
+Faisalabad;31.41;73.11;Pakistan;false;2617000
+Katowice;50.2604;19.02;Poland;false;2746000
+Warsaw;52.25;21;Poland;true;1707000
+Lisbon;38.7227;-9.1449;Portugal;true;2812000
+Asuncion;-25.2964;-57.6415;Paraguay;true;1870000
+Doha;25.2866;51.533;Qatar;true;1450000
+Bucharest;44.4334;26.0999;Romania;true;1942000
+Belgrade;44.8186;20.468;Serbia;true;1099000
+St. Petersburg;59.939;30.316;Russia;false;4553000
+Moscow;55.7522;37.6155;Russia;true;10452000
+Kigali;-1.9536;30.0605;Rwanda;true;860000
+Ad Damman;26.4282;50.0997;Saudi Arabia;false;2054710
+Riyadh;24.6408;46.7727;Saudi Arabia;true;4465000
+Jeddah;21.5169;39.2192;Saudi Arabia;false;3012000
+Honiara;-9.438;159.9498;Solomon Islands;true;76328
+Victoria;-4.6166;55.45;Seychelles;true;33576
+Omdurman;15.6167;32.48;Sudan;false;2395159
+Khartoum;15.5881;32.5342;Sudan;true;4754000
+Stockholm;59.3508;18.0973;Sweden;true;1264000
+Singapore;1.293;103.8558;Singapore;true;5183700
+Ljubljana;46.0553;14.515;Slovenia;true;314807
+Bratislava;48.15;17.117;Slovakia;true;423737
+Freetown;8.47;-13.2342;Sierra Leone;true;827000
+San Marino;43.9172;12.4667;San Marino;true;29579
+Dakar;14.7158;-17.4731;Senegal;true;2604000
+Mogadishu;2.0667;45.3667;Somalia;true;1100000
+Paramaribo;5.835;-55.167;Suriname;true;254169
+Juba;4.83;31.58;South Sudan;true;111975
+Sao Tome;0.3334;6.7333;Sao Tome And Principe;true;88219
+San Salvador;13.71;-89.203;El Salvador;true;1433000
+Damascus;33.5;36.3;Syria;true;2466000
+Aleppo;36.23;37.17;Syria;false;2738000
+Mbabane;-26.3167;31.1333;Swaziland;true;90138
+Lobamba;-26.4667;31.2;Swaziland;true;9782
+Grand Turk;21.4664;-71.136;Turks And Caicos Islands;true;5801
+Ndjamena;12.1131;15.0491;Chad;true;989000
+Lome;6.1319;1.2228;Togo;true;1452000
+Bangkok;13.75;100.5166;Thailand;true;6704000
+Dushanbe;38.56;68.7739;Tajikistan;true;1086244
+Dili;-8.5594;125.5795;Timor-Leste;true;234331
+Ashgabat;37.95;58.3833;Turkmenistan;true;727700
+Tunis;36.8028;10.1797;Tunisia;true;2412500
+Nukualofa;-21.1385;-175.2206;Tonga;true;42620
+Ankara;39.9272;32.8644;Turkey;true;3716000
+Istanbul;41.105;29.01;Turkey;false;10061000
+Izmir;38.4361;27.1518;Turkey;false;2587000
+Port-of-Spain;10.652;-61.517;Trinidad And Tobago;true;294934
+Funafuti;-8.5167;179.2166;Tuvalu;true;4749
+Taipei;25.0358;121.5683;Taiwan;true;6900273
+Taichung;24.1521;120.6817;Taiwan;false;2629323
+Kaohsiung;22.6333;120.2666;Taiwan;false;2769072
+Dodoma;-6.1833;35.75;Tanzania;true;218269
+Dar es Salaam;-6.8;39.2683;Tanzania;true;2930000
+Kiev;50.4334;30.5166;Ukraine;true;2709000
+Kampala;0.3167;32.5833;Uganda;true;1420000
+Montevideo;-34.858;-56.1711;Uruguay;true;1513000
+Tashkent;41.3117;69.2949;Uzbekistan;true;2184000
+Kingstown;13.1483;-61.2121;Saint Vincent And The Grenadines;true;49485
+Caracas;10.501;-66.917;Venezuela;true;2985000
+Maracaibo;10.73;-71.66;Venezuela;false;2072000
+Hanoi;21.0333;105.85;Vietnam;true;4378000
+Ho Chi Minh City;10.78;106.695;Vietnam;false;5314000
+Port Vila;-17.7334;168.3166;Vanuatu;true;44040
+Apia;-13.8415;-171.7386;Samoa;true;61916
+Andorra;42.5;1.5165;Andorra;true;53998
+Abu Dhabi;24.4667;54.3666;United Arab Emirates;true;603492
+Kabul;34.5167;69.1833;Afghanistan;true;3277000
+Saint John's;17.118;-61.85;Antigua And Barbuda;true;35499
+Tirana;41.3275;19.8189;Albania;true;895350
+Yerevan;40.1812;44.5136;Armenia;true;1102000
+Luanda;-8.8383;13.2344;Angola;true;5172900
+Buenos Aires;-34.6025;-58.3975;Argentina;true;12795000
+Vienna;48.2;16.3666;Austria;true;2400000
+Sydney;-33.92;151.1852;Australia;false;4630000
+Melbourne;-37.82;144.975;Australia;false;4170000
+Canberra;-35.283;149.129;Australia;true;327700
+Oranjestad;12.5304;-70.029;Aruba;true;68775
+Baku;40.3953;49.8622;Azerbaijan;true;2122300
+Sarajevo;43.85;18.383;Bosnia And Herzegovina;true;696731
+Bridgetown;13.102;-59.6165;Barbados;true;191152
+Dhaka;23.7231;90.4086;Bangladesh;true;12797394
+Chittagong;22.33;91.8;Bangladesh;false;4529000
+Brussels;50.8333;4.3333;Belgium;true;1743000
+Ouagadougou;12.3703;-1.5247;Burkina Faso;true;1149000
+Sofia;42.6833;23.3167;Bulgaria;true;1185000
+Manama;26.2361;50.5831;Bahrain;true;563920
+Bujumbura;-3.3761;29.36;Burundi;true;331700
+Porto-Novo;6.4833;2.6166;Benin;true;300000
+Cotonou;6.4;2.52;Benin;true;762000
+Hamilton;32.2942;-64.7839;Bermuda;true;52320
+Bandar Seri Begawan;4.8833;114.9333;Brunei;true;296500
+La Paz;-16.498;-68.15;Bolivia;true;1590000
+Santa Cruz;-17.7539;-63.226;Bolivia;false;2102998
+Sucre;-19.041;-65.2595;Bolivia;true;224838
+Salvador;-12.97;-38.48;Brazil;false;3484000
+Curitiba;-25.42;-49.32;Brazil;false;3084000
+Brasilia;-15.7833;-47.9161;Brazil;true;3716996
+Recife;-8.0756;-34.9156;Brazil;false;3651000
+Porto Alegre;-30.05;-51.2;Brazil;false;3917000
+Goiania;-16.72;-49.3;Brazil;false;2022000
+Belo Horizonte;-19.915;-43.915;Brazil;false;5575000
+Fortaleza;-3.75;-38.58;Brazil;false;3602319
+Campinas;-22.9;-47.1;Brazil;false;2791000
+Belem;-1.45;-48.48;Brazil;false;2167000
+Rio de Janeiro;-22.925;-43.225;Brazil;false;11748000
+Sao Paulo;-23.5587;-46.625;Brazil;false;18845000
+Nassau;25.0834;-77.35;Bahamas, The;true;227940
+Thimphu;27.473;89.639;Bhutan;true;98676
+Gaborone;-24.6463;25.9119;Botswana;true;208411
+Minsk;53.9;27.5666;Belarus;true;1805000
+Belmopan;17.252;-88.7671;Belize;true;15220
+Vancouver;49.2734;-123.1216;Canada;false;2313328
+Toronto;43.7;-79.42;Canada;false;5213000
+Ottawa;45.4167;-75.7;Canada;true;1145000
+Montreal;45.5;-73.5833;Canada;false;3678000
+Kinshasa;-4.3297;15.315;Congo (Kinshasa);true;7843000
+Bangui;4.3666;18.5583;Central African Republic;true;831925
+Brazzaville;-4.2592;15.2847;Congo (Brazzaville);true;1355000
+Bern;46.9167;7.467;Switzerland;true;275329
+Abidjan;5.32;-4.04;C𴥠DӉvoire;false;3802000
+Yamoussoukro;6.8184;-5.2755;C𴥠DӉvoire;true;206499
+Avarua;-21.25;-159.75;Cook Islands;true;5445
+Santiago;-33.45;-70.667;Chile;true;5720000
+Yaounde;3.8667;11.5167;Cameroon;true;1611000
+Yantai;37.5304;121.4;China;false;2116000
+Zibo;36.8;118.05;China;false;3061000
+Shanghai;31.2165;121.4365;China;false;14987000
+Shijianzhuang;38.05;114.48;China;false;2417000
+Nanchang;28.68;115.88;China;false;2350000
+Xiangtan;27.8504;112.9;China;false;2586948
+Xian;34.275;108.895;China;false;4009000
+Tianjin;39.13;117.2;China;false;7180000
+Changsha;28.2;112.97;China;false;2604000
+Shenyeng;41.805;123.45;China;false;4787000
+Jilin;43.85;126.55;China;false;2396000
+Haikou;20.05;110.32;China;false;2046189
+Zaozhuang;34.88;117.57;China;false;2145000
+Kunming;25.07;102.68;China;false;2931000
+Chengdu;30.67;104.07;China;false;4123000
+Harbin;45.75;126.65;China;false;3621000
+Nanning;22.82;108.32;China;false;2167000
+Baotou;40.6522;109.822;China;false;2036000
+Zhengzhou;34.755;113.6651;China;false;2636000
+Linyi;35.08;118.33;China;false;2082000
+Guiyang;26.58;106.72;China;false;3662000
+Fuzhou;26.08;119.3;China;false;2606000
+Xuzhou;34.28;117.18;China;false;2091000
+Nanchong;30.7804;106.13;China;false;2174000
+Xiamen;24.45;118.08;China;false;2519000
+Zhangzhou;24.5204;117.67;China;false;3531147
+Dongguan;23.0489;113.7447;China;false;4528000
+Shenzhen;22.5524;114.1221;China;false;7581000
+Wuhan;30.58;114.27;China;false;7243000
+Jinan;36.675;116.995;China;false;2798000
+Guangzhou;23.145;113.325;China;false;8829000
+Changchun;43.865;125.34;China;false;3183000
+Taiyuan;37.875;112.5451;China;false;2913000
+Beijing;39.9289;116.3883;China;true;11106000
+Urumqi;43.805;87.575;China;false;2151000
+Qingdao;36.09;120.33;China;false;2866000
+Hechi;23.0965;109.6091;China;false;3830000
+Jinxi;40.7503;120.83;China;false;2426000
+Chongqing;29.565;106.595;China;false;6461000
+Lanzhou;36.056;103.792;China;false;2561000
+Hefei;31.85;117.28;China;false;2035000
+Nanjing;32.05;118.78;China;false;3679000
+Hangzhou;30.25;120.17;China;false;3007000
+Wenzhou;28.02;120.6501;China;false;2350000
+Dalian;38.9228;121.6298;China;false;3167000
+Cali;3.4;-76.5;Colombia;false;2254000
+Medellin;6.275;-75.575;Colombia;false;3297000
+Bogota;4.5964;-74.0833;Colombia;true;7772000
+San Jose;9.935;-84.0841;Costa Rica;true;1284000
+Havana;23.132;-82.3642;Cuba;true;2174000
+Praia;14.9167;-23.5167;Cabo Verde;true;113364
+Willemstad;12.2004;-69.02;Cura袯;true;146813
+Nicosia;35.1667;33.3666;Cyprus;true;224300
+Prague;50.0833;14.466;Czechia;true;1162000
+Berlin;52.5218;13.4015;Germany;true;3406000
+Stuttgart;48.78;9.2;Germany;false;2944700
+Mannheim;49.5004;8.47;Germany;false;2362000
+Frankfurt;50.1;8.675;Germany;false;2895000
+Djibouti;11.595;43.148;Djibouti;true;923000
+Kobenhavn;55.6786;12.5635;Denmark;true;1085000
+Roseau;15.301;-61.387;Dominica;true;23336
+Santo Domingo;18.4701;-69.9001;Dominican Republic;true;2154000
+Algiers;36.7631;3.0506;Algeria;true;3354000
+Quito;-0.215;-78.5001;Ecuador;true;1701000
+Guayaquil;-2.22;-79.92;Ecuador;false;2514000
+Tallinn;59.4339;24.728;Estonia;true;394024
+El Giza;30.01;31.19;Egypt;false;2681863
+Cairo;30.05;31.25;Egypt;true;11893000
+Alexandria;31.2;29.95;Egypt;false;4165000
+Asmara;15.3333;38.9333;Eritrea;true;620802
+Barcelona;41.3833;2.1834;Spain;false;4920000
+Madrid;40.4;-3.6834;Spain;true;5567000
+Addis Ababa;9.0333;38.7;Ethiopia;true;3100000
+Helsinki;60.1756;24.9341;Finland;true;1115000
+Suva;-18.133;178.4417;Fiji;true;175399
+Stanley;-51.7;-57.85;Falkland Islands (Islas Malvinas);true;2213
+Palikir;6.9166;158.15;Micronesia, Federated States Of;true;4645
+Torshavn;62.03;-6.82;Faroe Islands;true;14398
+Paris;48.8667;2.3333;France;true;9904000
+Libreville;0.3854;9.458;Gabon;true;578156
+Birmingham;52.475;-1.92;United Kingdom;false;2285000
+Manchester;53.5004;-2.248;United Kingdom;false;2230000
+London;51.5;-0.1167;United Kingdom;true;8567000
+Saint George's;12.0526;-61.7416;Grenada;true;33734
+Tbilisi;41.725;44.7908;Georgia;true;1100000
+Accra;5.55;-0.2167;Ghana;true;2121000
+Gibraltar;36.1324;-5.3781;Gibraltar;true;187083
+Nuuk;64.1983;-51.7327;Greenland;true;14798
+Banjul;13.4539;-16.5917;Gambia, The;true;43094
+Conakry;9.5315;-13.6802;Guinea;true;1494000
+Malabo;3.75;8.7833;Equatorial Guinea;true;155963
+Athens;37.9833;23.7333;Greece;true;3242000
+Guatemala;14.6211;-90.527;Guatemala;true;1024000
+Bissau;11.865;-15.5984;Guinea-Bissau;true;403339
+Georgetown;6.802;-58.167;Guyana;true;264350
+Hong Kong;22.305;114.185;Hong Kong;false;7206000
+Tegucigalpa;14.102;-87.2175;Honduras;true;946000
+Zagreb;45.8;16;Croatia;true;722526
+Port-au-Prince;18.541;-72.336;Haiti;true;1998000
+Budapest;47.5;19.0833;Hungary;true;1679000
+Bekasi;-6.2173;106.9723;Indonesia;false;2378211
+Medan;3.58;98.65;Indonesia;false;2115000
+Surabaya;-7.2492;112.7508;Indonesia;false;2845000
+Jakarta;-6.1744;106.8294;Indonesia;true;9125000
+Bandung;-6.95;107.57;Indonesia;false;2394000
+Dublin;53.3331;-6.2489;Ireland;true;1059000
+Tel Aviv-Yafo;32.08;34.77;Israel;false;3112000
+Douglas;54.1504;-4.48;Isle Of Man;true;35854
+New Delhi;28.6;77.2;India;true;317797
+Pune;18.53;73.85;India;false;4672000
+Ahmedabad;23.0301;72.58;India;false;5375000
+Mumbai;19.017;72.857;India;false;18978000
+Bangalore;12.97;77.56;India;false;6787000
+Surat;21.2;72.84;India;false;3842000
+Hyderabad;17.4;78.48;India;false;6376000
+Lucknow;26.855;80.915;India;false;2695000
+Chennai;13.09;80.28;India;false;7163000
+Haora;22.5804;88.3299;India;false;4841638
+Kolkata;22.495;88.3247;India;false;14787000
+Delhi;28.67;77.23;India;false;15926000
+Nagpur;21.17;79.09;India;false;2454000
+Kanpur;26.46;80.32;India;false;3162000
+Indore;22.7151;75.865;India;false;2026000
+Jaipur;26.9211;75.81;India;false;2917000
+Patna;25.625;85.13;India;false;2158000
+Baghdad;33.3386;44.3939;Iraq;true;5054000
+Mashhad;36.27;59.57;Iran;false;2469000
+Tehran;35.6719;51.4243;Iran;true;7873000
+Reykjavik;64.15;-21.95;Iceland;true;166212
+Rome;41.896;12.4833;Italy;true;3339000
+Milan;45.47;9.205;Italy;false;2945000
+Naples;40.84;14.245;Italy;false;2250000
+Kingston;17.9771;-76.7674;Jamaica;true;937700
+Amman;31.95;35.9333;Jordan;true;1060000
+Tokyo;35.685;139.7514;Japan;true;35676000
+Fukuoka;33.595;130.41;Japan;false;2792000
+Hiroshima;34.3878;132.4429;Japan;false;2045000
+Nagoya;35.155;136.915;Japan;false;3230000
+Osaka;34.75;135.4601;Japan;false;11294000
+Sapporo;43.075;141.34;Japan;false;2544000
+Sendai;38.2871;141.0217;Japan;false;2250000
+Yokohama;35.32;139.58;Japan;false;3697894
+Nairobi;-1.2833;36.8167;Kenya;true;3010000
+Bishkek;42.8731;74.5852;Kyrgyzstan;true;837000
+Phnom Penh;11.55;104.9166;Cambodia;true;1466000
+Tarawa;1.3382;173.0176;Kiribati;true;28802
+Moroni;-11.7042;43.2402;Comoros;true;128698
+Basseterre;17.302;-62.717;Saint Kitts And Nevis;true;21887
+Pyongyang;39.0194;125.7547;Korea, North;true;3300000
+Seoul;37.5663;126.9997;Korea, South;true;9796000
+Busan;35.0951;129.01;Korea, South;false;3480000
+Incheon;37.4761;126.6422;Korea, South;false;2550000
+Daegu;35.8668;128.607;Korea, South;false;2460000
+Kuwait;29.3697;47.9783;Kuwait;true;2063000
+George Town;19.2804;-81.33;Cayman Islands;true;4268
+Pago Pago;-14.274;-170.7046;American Samoa;true;12576
+Hagta;13.4745;144.7504;Guam;true;1051
+Capitol Hill;15.2137;145.7546;Northern Mariana Islands;true;2500
+Seattle;47.6217;-122.3238;United States;false;3541236
+Washington;38.9047;-77.0163;United States;true;5191844
+Miami;25.784;-80.2102;United States;false;6247425
+Tampa;27.9937;-82.4454;United States;false;2744107
+Dallas;32.7938;-96.7659;United States;false;5634307
+Houston;29.7871;-95.3936;United States;false;5424720
+Queens;40.7498;-73.7976;United States;false;2333054
+New York;40.6943;-73.9249;United States;false;19164071
+Brooklyn;40.6501;-73.9496;United States;false;2629150
+Philadelphia;40.0076;-75.134;United States;false;5591554
+Riverside;33.9382;-117.3949;United States;false;2065627
+San Francisco;37.7561;-122.4429;United States;false;3548847
+San Diego;32.8312;-117.1225;United States;false;3181172
+Los Angeles;34.114;-118.4068;United States;false;12740381
+Las Vegas;36.2288;-115.2603;United States;false;2044731
+Denver;39.7621;-104.8759;United States;false;2741534
+Chicago;41.8373;-87.6861;United States;false;8639278
+Atlanta;33.7627;-84.4231;United States;false;5080712
+Phoenix;33.5722;-112.0891;United States;false;4054083
+Baltimore;39.3051;-76.6144;United States;false;2181206
+Boston;42.3189;-71.0838;United States;false;4556916
+Saint Louis;38.6358;-90.2451;United States;false;2096990
+Minneapolis;44.9635;-93.2679;United States;false;2866604
+Detroit;42.3834;-83.1024;United States;false;3520589
+Portland;45.5372;-122.65;United States;false;2027629
